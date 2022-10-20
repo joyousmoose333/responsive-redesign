@@ -1,0 +1,131 @@
+<!-- built referencing Jeff's live coding -->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=style.css>
+    <link rel="stylesheet" href=bootstrap.css>
+    <title>Responsive Redesign - LA County Public Works</title>
+</head>
+
+<body>
+    <div class="page-wrapper"> 
+        <div class="header">
+            <h1>Responsive Redesign</h1>
+            <h2>LA County Public Works</h2>
+        </div>
+        <div class="page-section-1">
+            <h1>Introduction</h1>
+            <p>Welcome! Public services are crucial to the <strong>safety and prospering of communities,</strong> yet the websites that 
+               are meant to publicize these services are often <strong>confusing and outdated.</strong> I was inspired to redesign the 
+               <a href="https://dpw.lacounty.gov/contact/">Department of Public Works website </a>for my hometown of Los Angeles.</p>
+            <h2>The Original Site: Identifying Usability Problems</h2>
+            <div class="img-wrapper">
+                <img src="original-site.png" class="figure-img img-fluid" alt="a screenshot of the original site" style="width: 47%; height: auto;">
+                <img src="original-site-2.png" class="figure-img img-fluid" alt="another screenshot of the original site" style="width: 47%; height: auto;">
+            </div>
+            <h5>After interacting with the original site (pictured above), I documented the concerns I had with the usability (including efficiency), learnability, and memorability of the site. </h5>
+            <h4>Illogical reading path encouraged</h4>
+            <ul>
+                <li>[1] In an emergency, a user would need to quickly access instructions in regard to their situation. 
+                    Yet, the “urgent requests” section is at the bottom of the page, preventing easy visibility. 
+                    While there is a message <em>“Please call 800-675-HELP (4357) for urgent 
+                    requests…”</em> at the top of the page, the text is tiny and the link to examples is at the 
+                    end of the chunk of text.</li>
+                    <br>
+                <li>[2] Similarly, the <em>“employee directory”</em> is at the top of the page, which does not make sense as it 
+                    is not the most pressing and important information on the page. The small text reading 
+                    “employee name” does not provide sufficient or accessible documentation to the user in 
+                    regard to how to complete this search. </li>
+            </ul>
+            <h4>Unclear Information</h4>
+            <ul>
+                <li>[3] There is redundancy in the contact information on the site—one phone number is listed at the top 
+                    and another is listed as an option to <em>“Call Public Works”</em> which would likely confuse a user, given 
+                    that the numbers are not indicated to be the same or different. There is also an email at the top 
+                    of the site and a <em>“Send Public Works an Email”</em> link at the bottom.
+                </li>
+                <br>
+                <li>[4] The headers do not correctly encapsulate their content. For example, under the <em>"Report A Problem"</em> 
+                    header, not all of the options are listed as problems (like <em>“County Operated Airports”</em> and 
+                    <em>“Tree Trimming”</em>), making it difficult for users to know where to look for their problem. </li>
+            </ul>
+            <h4>Stylistic Inconsistency</h4>
+            <ul>
+                <li>[5] The poor textual hierarchy of the site makes it difficult to use and learn, as a reading path is not encouraged. 
+                    This can be seen in the differences of header sizes and randomness of italitazation and bolding of text. 
+                    Elements of equal importance should have equal size. </li>
+                <br>
+                <li>[6] There is inconsistency in underlining/linking—-the <em>“see examples”</em> link at at the warning near 
+                    the header is an underlined link, whereas all of the other links on the site are not underlined until hovered over.
+                </li>
+                <br>
+                <li>[7] The poor contrast on headers (white text on light blue background) make the site difficult to navigate and inaccessible.</li>
+                <br>
+                <li>[8] Search bar inconsistency — There is a button to submit your search for the employee search but not for the overall 
+                    site search. This inconsistency makes memorability difficult.</li>
+            </ul>
+            <h4>Mobile Compatability Concerns</h5>
+                <li>[9] On mobile devices, the site is extremely warped, incompatible, and hard to navigate, leaving users stuck and confused.</li>
+            <br>
+            <h2>The Original Site: Accessibility</h2>
+            <p> I used <a href="https://wave.webaim.org/">WebAIM WAVE </a> to detect and consider possible accessibility problems with the site.
+                The WAVE report for this site reported 12 errors, 4 contrast errors, and 6 alerts. Some of the errors reported, specifically the 
+                “empty link” and “empty button” warnings did not seem to be actual issues on the site and referenced text that is not meant to 
+                be a link, so I do not agree with those problems. The “contrast errors” and the tools on WAVE to better understand contrast and 
+                text accessibility were very helpful, though. Additionally, the ARIA accessibility analysis was helpful for better unedrstanding 
+                site accessibility.</p>
+        </div>
+    </div>
+
+    <div class="page-section-2">
+        <h1>Visual Redesign</h1>
+        <h2>Low-Fidelity Wireframing</h2>
+        <h3>Below are wireframes of my proposed redesign of the site, created using Balsamiq.
+            There are 3 wireframes for mobile, tablet, and web layouts, as I am building out a 
+            responsive redesign.</h3>
+        <h5>Each of the numbers are listed in reference to the usability error from above that the change is solving.</h5>
+        <!-- <div class="img-wrapper"> -->
+            <img src="lowfi-ipad.png" class="figure-img img-fluid" alt="a low-fi mockup for tablet">
+            <img src="lowfi-phone.png" class="figure-img img-fluid" alt="a low-fi mockup for mobile">
+            <img src="lowfi-browser.png" class="figure-img img-fluid" alt="a low-fi mockup for browser" style="width: max-content">
+        <!-- </div> -->
+    </div>
+
+    <div class="page-section-1">
+        <h2>Visual Style Guide</h2>
+        <h3>Below is clear documentation of the visual style I will utilize in the building out of the revised site.</h3>
+        <div class="img-wrapper">
+            <img src="style_guide.png" class="figure-img img-fluid" alt="style guide for site" style="width: 60%">
+        </div>
+    </div>
+
+    <div class="page-section-2">
+        <h2>High-Fidelity Prototyping</h2>
+        <h3>Below are three hi-fi prototypes based on the previous low-fi prototypes. They are annotated with 
+            the different elements and key layout choices so that the site is easily producable after this 
+            step.</h3>
+        <h5>I plan to build the site using the Bootstrap class.</h5>
+        <h3>Web Hi-Fi</h3>
+            <img src="hifi-web.png" class="figure-img img-fluid mx-auto d-block"  style="width: 70%" alt="hifi prototype for web">
+        <h3>Tablet Hi-Fi </h3>
+            <img src="hifi-tablet.png" class="figure-img img-fluid mx-auto d-block" style="width: 70%" alt="hifi prototype for tablet">
+        <h3>Mobile Hi-Fi</h3>
+            <img src="hifi-mobile.png" class="figure-img img-fluid mx-auto d-block" style="width: 50%" alt="hifi prototype for mobile">
+    </div>
+
+    <div class="page-section-1">
+        <h2>My Responsive Redesign</h2>
+        <h3><a href="https://joyousmoose333.github.io/public-works-redesign/">Linked here is my redesigned LA Public Works site, built through the iterative design process depicted above. </a></h3>
+    </div>
+
+    <div class="page-section-footer">
+        <h2>Thank you so much for coming along this journey with me!</h2>
+        <h4>Made in Providence, Built With Bootstrap.</h4>
+    </div>
+
+
+</body>
+</html>
